@@ -1,0 +1,25 @@
+{
+    "content-type":"application/json; charset=utf-8",
+    "first_name": "Josh", // firstname = Josh first_name = Josh
+    "last_name": "Allen",
+    "total_price": 111,
+    "deposit_paid": true,
+    "booking_dates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "super bowls",
+
+    "create_booking":{
+        "firstname": "Hemant",
+        "lastname": "Gandhi",
+        "totalprice": 111,
+        "depositpaid": true,
+        "bookingdates": {
+        "checkin": "2018-01-01",
+        "checkout": "2019-01-01"
+    },
+    "additionalneeds": "dsfdsf bowls"
+
+    }
+}

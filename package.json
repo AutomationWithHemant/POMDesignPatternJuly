@@ -1,0 +1,35 @@
+{
+  "name": "pomdesignpatternjuly26",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test_dev": "cross-env ENV_NAME=dev npx playwright test",
+    "test_demo": "cross-env ENV_NAME=demo npx playwright test",
+    "test_staging": "cross-env ENV_NAME=staging npx playwright test",
+    "test_demo_chr_hd": "cross-env ENV_NAME=demo npx playwright test --project=chromium --headed",
+    "test_demo_saf_hd": "cross-env ENV_NAME=demo npx playwright test --project=webkit --headed",
+    "test_demo_fir_hd": "cross-env ENV_NAME=demo npx playwright test --project=firefox --headed",
+    "test_demo_chr_hl": "cross-env ENV_NAME=demo npx playwright test --project=chromium",
+    "test_demo_saf_hl": "cross-env ENV_NAME=demo npx playwright test --project=webkit",
+    "test_demo_fir_hl": "cross-env ENV_NAME=demo npx playwright test --project=firefox",
+    "test_demo_mobile": "cross-env ENV_NAME=demo npx playwright test --project=Mobile Chrome",
+    "test_demo_api": "cross-env ENV_NAME=demo npx playwright test --project=testingAPI",
+    "test_dev_api": "cross-env ENV_NAME=dev npx playwright test --project=testingAPI",
+    "test_demo_uat_api": "cross-env ENV_NAME=dev npx playwright test --project=testingAPI --grep @UAT"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.1.0",
+    "cross-env": "^10.1.0"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "dotenv": "^17.4.2"
+  }
+}
